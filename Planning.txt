@@ -1,0 +1,36 @@
+so this app will make candidates to vote online no matter where they are
+
+To DO
+-> Sign-up page for the candidates
+->Login page
+->to See the list of candidate 
+-> vote a candidate
+-> can vote only one time
+->can update password
+->sign up through aadhar and  password
+-> login through aadhar and password
+->real time vote display
+-> there should be one admin and he can't vote
+
+Routes
+
+USER Authentication:
+/Sign-up: POST- will take data from user
+/Login: POST
+
+Voting
+/GET->get the list of candidate
+/Vote: POST->vote for a particular candidate
+
+vote counts
+/vote/counts: GET->Get the list of candidate sorted by their vote counts.
+
+User profile
+/profile: GET ->get the user info
+/pasword change:PUT->change the user's password
+
+Admin electoral management:
+/candidate:POST->create a new candidate
+Update existing candidate-> PUT
+delete a candidate-> DELETE
+
